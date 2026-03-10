@@ -1,9 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+  <ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
 
-  <div class="container-fluid p-0">
+li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555555;
+  color: white;
+}
+  .active {
+  background-color: #04AA6D;
+  color: white;
+}
+  ul {
+  border: 1px solid #555555;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #555555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+<link rel="stylesheet" href="css/style.css">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
@@ -30,7 +75,9 @@
         medical school or a career in biotechnology. I am eager to delve deeper into the realms of medical research and innovation, where 
         I can apply my passion for biology to address pressing healthcare challenges and contribute to advancements in patient care and 
         treatment modalities.
-    
+            <br><br>
+        </p>
+
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
@@ -70,7 +117,7 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5 experience">
           <div class="resume-content">
             <h3 class="mb-0">Ultrasound Probe Scholar</h3>
-            <div class="subheading mb-3"><a target="_blank" href=https://medschool.ucr.edu/>UCR School of Medicine</a></div>
+            <div class="subheading mb-3"><a target="_blank" href=https://medschool.ucr.edu/>University of California Riverside School of Medicine</a></div>
             <p>
             • Helping introduce first-year UCR SOM medical students to basic ultrasound skills as part of their Gross Anatomy curriculum as an 
             ultrasound model, as well as getting the opportunity to practice scanning throughout the 2023-2024 school year<br>
@@ -113,14 +160,6 @@
   document.write(new Date().getFullYear());
   </script> Nathan Hillyer</center><br>
   </div>
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
 </body>
 </html>
